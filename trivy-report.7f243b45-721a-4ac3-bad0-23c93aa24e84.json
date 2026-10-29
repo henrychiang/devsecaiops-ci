@@ -1,0 +1,47 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "01a187cc-2736-7719-b3d4-f2330a314ca0",
+  "CreatedAt": "2026-10-29T13:14:25.974466811Z",
+  "ArtifactID": "sha256:aa29ca5a90e08a94cec341e0994c856e629df89656bc2df9ac67073c1508caf1",
+  "ArtifactName": "/builder/home/devsecaiops-ci",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "git@github.com-ci:henrychiang/devsecaiops-ci",
+    "Branch": "dev-7f243b45-721a-4ac3-bad0-23c93aa24e84",
+    "Commit": "8ac00ceb1427f461bb835ce9d3f0ee1d11c22143",
+    "CommitMsg": "Update Dockerfile",
+    "Author": "henrychiang \u003cyoyolist@gmail.com\u003e",
+    "Committer": "GitHub \u003cnoreply@github.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "go.mod",
+      "Class": "lang-pkgs",
+      "Type": "gomod",
+      "Packages": [
+        {
+          "ID": "gohttpsvc",
+          "Name": "gohttpsvc",
+          "Identifier": {
+            "PURL": "pkg:golang/gohttpsvc",
+            "UID": "91a74bb75ee54fac"
+          },
+          "Relationship": "root",
+          "AnalyzedBy": "gomod"
+        }
+      ]
+    },
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 7,
+        "Failures": 0
+      }
+    }
+  ]
+}
