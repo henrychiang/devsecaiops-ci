@@ -1,0 +1,47 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "01a187be-3fe6-7441-aea2-b9d4a4bd8ccd",
+  "CreatedAt": "2026-10-29T12:59:14.79028024Z",
+  "ArtifactID": "sha256:694b01008c94a0122349090f8062bbda778028b5f82ce5884030ca2a72ab157d",
+  "ArtifactName": "/builder/home/devsecaiops-ci",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "git@github.com-ci:henrychiang/devsecaiops-ci",
+    "Branch": "dev-e2e4e55d-2ec1-4e21-bfb1-29e918817ae6",
+    "Commit": "77e0af413d7b08b19961d027b22b48bacd71faf5",
+    "CommitMsg": "Merge pull request #1 from henrychiang/dev-9a876881-f3f1-44ac-b9e4-98c41f97acde\n\nDev 9a876881 f3f1 44ac b9e4 98c41f97acde",
+    "Author": "henrychiang \u003cyoyolist@gmail.com\u003e",
+    "Committer": "GitHub \u003cnoreply@github.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "go.mod",
+      "Class": "lang-pkgs",
+      "Type": "gomod",
+      "Packages": [
+        {
+          "ID": "gohttpsvc",
+          "Name": "gohttpsvc",
+          "Identifier": {
+            "PURL": "pkg:golang/gohttpsvc",
+            "UID": "91a74bb75ee54fac"
+          },
+          "Relationship": "root",
+          "AnalyzedBy": "gomod"
+        }
+      ]
+    },
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 7,
+        "Failures": 0
+      }
+    }
+  ]
+}
