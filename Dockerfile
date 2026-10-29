@@ -1,6 +1,7 @@
 # Use the official Golang image as the builder stage
 #FROM golang:1.26-alpine AS builder
-FROM golang:1.24 AS builder
+#FROM golang:1.24 AS builder
+FROM golang:1.26 AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -13,7 +14,7 @@ RUN go mod download
 # Copy the source code
 COPY . .
 
-RUN go mod tidy
+#RUN go mod tidy
 # Build the application
 # CGO_ENABLED=0 ensures a statically linked binary
 RUN CGO_ENABLED=0 GOOS=linux go build -o server .
